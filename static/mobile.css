@@ -1,0 +1,121 @@
+/* General Styles for Mobile Devices */
+@media (max-width: 599px) {
+    body {
+        font-size: 14px;
+        /* padding: 2vw; */
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar on mobile devices */
+    }
+
+    main {
+        margin: 0;
+        width: 90vw;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 2;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item5,
+    .grid-item6,
+    .grid-item7 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .links {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .about,
+    .tech,
+    .education {
+        padding: 15px;
+    }
+    .tech{
+        height: 115vh;
+    }
+    .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+
+    .education-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    /* Hide specific div for screen width less than 600px */
+    .specific-div {
+        display: none;
+    }
+
+    header>.span2 {
+        font-size: 1.5rem;
+    }
+
+    header>.span2>span {
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    header>.span1 {
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    .sun {
+        width: 40vw;
+        height: 40vw;
+        top: 50vh;
+        left: 50vw;
+    }
+
+    .links>img {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #about>div>p {
+        font-size: 1.2rem;
+    }
+
+    #about>div {
+        width: 90vw;
+    }
+
+    .tech-grid>.item {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .tech-grid>.item>img {
+        width: 5vw;
+        height: 5vw;
+    }
+}

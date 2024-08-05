@@ -1,0 +1,109 @@
+/* General Styles for Tablet Devices */
+@media  (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 3vw;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+   .container {
+        display:none;
+   }
+
+    main {
+        margin-top: 2vw;
+        width: 94vw;
+       margin-left: 0vw;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4 {
+       
+        text-align: center;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .links {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .about,
+    .tech,
+    .education {
+        padding: 20px;
+    }
+
+    .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .education-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    #projects {
+        padding: 20px;
+    }
+    #projects>.grid1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Specific Adjustments for Smaller Tablets */
+@media  (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .sidebar {
+        width: 30vw;
+    }
+
+    main {
+        width: 100vw;
+        margin-left: 0vw;
+    }
+    #about {
+        
+        padding: 20px;
+    }
+    #about>div{
+        width: 80vw;
+    }
+
+
+    #projects {
+        padding: 20px;
+    }
+    #projects>.grid1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

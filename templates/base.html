@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ashish Pal's Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='tablet.css')}}" media="screen and (min-width: 600px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="{{ url_for('static',filename='mobile.css')}}" media="screen and (max-width: 599px)">
+    <link rel="stylesheet" href="{{ url_for('static',filename='projects.css')}}">
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="sidebar" >
+            <!-- <span class="close">X</span> -->
+            <div class="profile">
+                <h2>Ashish Pal</h2>
+                <p>Web & Android Developer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{url_for('home')}}">Home</a></li>
+                    <li><a href="{{url_for('home')}}#about">About</a></li>
+                    <li><a href="{{url_for('projects')}}">Projects</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy; 2024 Ashish Pal
+            </div>
+        </div>
+        
+    </div>
+    <main > 
+        {% block content %}{% endblock %}
+    </main>
+
+    <div class="sun"></div>
+</body>
+</html>
